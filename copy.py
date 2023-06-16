@@ -28,10 +28,16 @@ def main(srcdir: str , dstdir: str):
     if not website.is_dir():
         raise BadDstDir(f"Bad destination directory '{website}'")
     strudel_html = strudel / "website" / "html"
+    print(f"Copy files from {strudel_html} -> {website}")
     for src in strudel_html.glob("**/*"):
-        if src.is_file() and not src.name.endswith("~") and not src.name.startswith("."):
+        if src.is_dir():
+            dst_dir = website / src.relative_to(strudel_html)
+            if not dst_dir.exists():
+                print(f"Create new directory: {dst_dir}")
+                dst_dir.mkdir()
+        elif src.is_file() and not src.name.endswith("~") and not src.name.startswith("."):
             dst = website / src.relative_to(strudel_html)
-            print(f"copy {src} -> {dst}")
+            print(f"  {src} -> {dst}")
             shutil.copy(src, dst)
     return 0
 
