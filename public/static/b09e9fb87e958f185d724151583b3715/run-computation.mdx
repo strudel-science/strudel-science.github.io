@@ -1,0 +1,124 @@
+---
+id: 'task-flows-run-computation'
+title: 'Run Computation'
+tagline: 'Running optimizations, simulations, analyses'
+tags: ['execution', 'scenario', 'job', 'simulation', 'optimization', 'stepper', 'wizard']
+intent: 'Enables users to run computation(s) through a multi-step flow to generate results.'
+intentDetails: 'Computations could be optimizations, calculations, or simulations for a model, scenario, or experiment with attributes to observe and compare results. Attributes may include input data and settings. Computations may be long running and require the ability for a user to leave the flow and return later.'
+exampleUrl: 'https://strudel.science/strudel-kit/#/run-computation'
+codeUrl: 'https://github.com/strudel-science/strudel-kit/tree/main/strudel-demo-app/src/app/run-computation'
+figmaUrl: 'https://www.figma.com/file/UQT4iRirRG9lrgzayfzswY/STRUDEL-task-flows?type=design&node-id=1%3A26644&mode=design&t=YPdwq8c0BdXx5Um8-1'
+iconImage: '../../images/task-flows/overview-icons/run-computation.png'
+---
+import { Grid, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
+import { TaskFlowCard } from '/src/components/TaskFlowCard';
+import { InfoTable } from '/src/components/InfoTable';
+
+## Overview
+
+<Grid container spacing={4}>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/run-computation/1.Initiate-task-from-list-view-action.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/run-computation/2.Create-a-scenario.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/run-computation/3.Enter-inputs.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/run-computation/4.Computation-settings.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/run-computation/5.Running-computation.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/run-computation/6.Computation-results.png)
+  </Grid>
+</Grid>
+
+### Guidelines for adapting the Task Flow
+
+<ul>
+  <li>
+    Break the task flow into multiple workable steps and use a progress indicator / stepper to help users see the progress and remaining steps in the process to complete.
+  </li>
+  <li>
+    Organize information into sections that are easy to digest. This helps improve the readability and searchability.
+  </li>
+  <li>
+    Offer guidance, tips, and links to detailed documentation for complex inputs & interactions.
+  </li>
+  <li>
+    Pre-fill the forms with sensible default values wherever possible, especially if data inputs require long forms.
+  </li>
+  <li>
+    Consider allowing users to upload input data as external files or spreadsheets, especially for computations that require large amounts of input data. 
+  </li>
+  <li>
+    Make attributes searchable and filterable to make it easy to find attributes of interests.
+  </li>
+  <li>
+    Give real time error warnings for mis-configurations, especially for long complex forms. For example, specify bounds for values and provide warnings if values are outside of bounds.
+  </li>
+  <li>
+    Help users recover from failed computations by providing meaningful and actionable error messages and allow them to go back and change configurations and inputs.
+  </li>
+  <li>
+    Don’t break the workflow into too many small steps. Users may perceive this as a long and overwhelming process to complete.
+  </li>
+  <li>
+    Don’t assume users will understand each input field and the values to configure it. Provide contextual information when able.
+  </li>
+</ul>
+
+{/*
+## Variations & Examples
+
+Aliquip ea ipsum Lorem amet incididunt excepteur Lorem aute proident deserunt commodo. Officia ipsum magna laborum dolore mollit adipisicing eiusmod. Duis irure ullamco in aliquip eu ad aliquip elit cupidatat.
+
+## Components & Patterns Used
+
+<InfoTable>
+  <TableHead>
+    <TableRow>
+      <TableCell>Component</TableCell>
+      <TableCell>Usage Context</TableCell>
+      <TableCell>Links to Libraries</TableCell>
+    </TableRow>
+  </TableHead>
+  <TableBody>
+    <TableRow>
+      <TableCell>Stepper</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/material-ui/react-stepper/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Data Grid</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/x/react-data-grid/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Date Picker</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/x/react-date-pickers/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Select</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/material-ui/react-select/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+  </TableBody>
+</InfoTable>
+*/}
+
+## Related Task Flows
+
+<Grid container spacing={4}>
+  <Grid item md={6}>
+    <TaskFlowCard name="Run Interactive Computation" />
+  </Grid>
+  <Grid item md={6}>
+    <TaskFlowCard name="Explore Data" />
+  </Grid>
+</Grid>

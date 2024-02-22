@@ -1,0 +1,129 @@
+---
+id: 'about-glossary'
+title: 'Glossary'
+subtitle: ''
+disableTableOfContents: true
+---
+import {PageContainer} from '/src/components/PageContainer';
+import {Link} from 'gatsby';
+
+<PageContainer>
+    {/*  import HorizontalNavList from "@components/horizontal-nav-list" */}
+
+    This page provides precise and detailed descriptions of important STRUDEL terms,
+    particularly
+    in the context of <Link to="#task-flow">Task Flows</Link>.
+
+    {/*
+<HorizontalNavList
+  items={"ACDEFIPRSU".split("")}
+  slug={props.slug}
+/>
+*/}
+
+    ## A
+
+    ### <span id="account">Account</span>
+
+    Record of a user in the system, which may include permissions, roles, and internal
+    records of history of actions.
+
+    ### <span id="analysis">Analysis</span>
+
+    Category of <Link to="#task-flow">Task Flow</Link> that involves intensive
+    computation.
+
+    ## C
+
+    ### <span id="computation">Computation</span>
+
+    Backend computation that runs in non-interactive (e.g. 10 sec or more) time.
+
+    ## D
+
+    ### <span id="data">Data</span>
+
+    One data entity. May be scalar, vector, matrix, or have an irregular structure of
+    potentially nested fields and values.
+
+    ### <span id="data-management">Data management</span>
+
+    Category of <Link to="#Task-flow">Task Flow</Link> that involves movement or other
+    bulk operations on datasets.
+
+    ### <span id="design-system">Design System</span>
+
+    A Design System is a set of reusable components and patterns along with guidelines for designing and implementing user interfaces in science and research domains.
+
+    See <Link to="/design-system">this page for details on the STRUDEL Design System</Link>.
+
+    ## E
+
+    ### <span id="exploration">Exploration</span>
+
+    Category of <Link to="#task-flow">Task Flow</Link> that involves searching or
+    browsing to retrieve data as well as examining data items in detail.
+
+    ## F
+
+    ### <span id="flowsheet">Flowsheet</span>
+
+    In process engineering, the set of process units and the "streams" that connect them
+    into a graph.
+
+    ## I
+
+    ### <span id="interactive-computation">Interactive computation</span>
+
+    Backend computation that runs in interactive (e.g. 10 sec or less) time.
+
+    ## P
+
+    ### <span id="planning-framework">Planning Framework</span>
+
+    A Planning Framework is a set of guides and questions that will help scientific teams incorporate UX practices in their software production.
+
+    See <Link to="/planning-framework">this page for details about the STRUDEL Planning Framework</Link>.
+
+    ### <span id="profile">Profile</span>
+
+    Information about a user in the system that typically comes from the user
+    themselves, such as name, avatar, and preferences
+
+    ## R
+
+    ### <span id="repository">Repository</span>
+
+    A container for datasets.
+
+    ## S
+
+    ### <span id="scenario">Scenario</span>
+
+    A selection of a model and parameters used as input to a computation.
+
+    ## T
+
+    ### <span id="task-flow">Task Flow</span>
+
+    A set of steps (represented by a series of screens) that help to accomplish a task
+    and represent how a user progresses through a UI. A series of Task Flows can be composed into the GUI of a <Link to="#workflow">Workflow</Link>.
+
+    ## U
+
+    ### <span id="user">User</span>
+
+    Uniquely identified actor in the system
+
+    ### <span id="utility">Utility</span>
+
+    Category for <Link to="#task-flow">Task Flows</Link> that don't fit into any other
+    category.
+
+    ## W
+
+    ### <span id="workflow">Workflow</span>
+
+    A series of steps to complete a research goal, such as: data collection through experiments and observations, data movement over a wide area network, running simulations and data analyses on desktops or large-scale computing systems. Workflows are typically computationally represented from a computer science perspective as Graphs or Directed Acyclic Graphs (DAGs).
+
+</PageContainer>
