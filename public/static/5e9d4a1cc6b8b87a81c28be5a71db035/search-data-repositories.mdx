@@ -1,0 +1,111 @@
+---
+id: 'task-flows-search-data-repositories'
+title: 'Search Data Repositories'
+tagline: 'Mollit laboris nulla consectetur sint sunt.'
+tags: ['dataset', 'repository']
+intent: 'Enables exploration and evaluation of datasets from a repository which users can download or export.'
+intentDetails: 'A dataset repository lists multiple verified datasets, often uploaded by the community and available to the community to evaluate, download, and use for further research.'
+exampleUrl: 'https://strudel.science/strudel-kit/#/search-data-repositories'
+codeUrl: 'https://strudel.science/strudel-kit/docs/task-flows/search-data-repositories'
+figmaUrl: 'https://www.figma.com/file/UQT4iRirRG9lrgzayfzswY/STRUDEL-task-flows?type=design&node-id=1%3A45832&mode=design&t=YPdwq8c0BdXx5Um8-1'
+iconImage: '../../images/task-flows/overview-icons/search-data-repository.png'
+---
+import { Grid, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
+import { TaskFlowCard } from '/src/components/TaskFlowCard';
+import { InfoTable } from '/src/components/InfoTable';
+
+## Overview
+
+<Grid container spacing={4}>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/search-data-repository/1.Search-filter-repository.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/search-data-repository/2.Dataset-details.png)
+  </Grid>
+  <Grid item xs={6} md={4}>
+    ![TODO alt text](../../images/task-flows/search-data-repository/3.Download-queue.png)
+  </Grid>
+</Grid>
+
+### Guidelines for adapting the Task Flow
+
+<ul>
+  <li>
+    Support search and filtering of the data itself, not just dataset metadata.
+  </li>
+  <li>
+    Allow for inspection of the data prior to downloading. This can include:
+    <ul>
+      <li>
+        For observational data - showing what types of data was collected, over what period of time, and the observation count.
+      </li>
+      <li>
+        Plots to describe characteristics of the data, such as gaps and quality.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Expect that there may be many filtering options. Vertical sidebar filters can be useful for this, as well as “build your own” filters type patterns.
+  </li>
+  <li>
+    Where possible, allow users to filter within a specific dataset so that they don’t have to download an entire dataset that might not be relevant to their work.
+  </li>
+  <li>
+    Data should always include units so that it can be evaluated by the user or converted in analyses.
+  </li>
+  <li>
+    How the list of datasets is displayed can vary. For example, the list can be styled as citations or as a structured table.
+  </li>
+</ul>
+
+{/*
+## Variations & Examples
+
+Aliquip ea ipsum Lorem amet incididunt excepteur Lorem aute proident deserunt commodo. Officia ipsum magna laborum dolore mollit adipisicing eiusmod. Duis irure ullamco in aliquip eu ad aliquip elit cupidatat.
+
+## Components & Patterns Used
+
+<InfoTable>
+  <TableHead>
+    <TableRow>
+      <TableCell>Component</TableCell>
+      <TableCell>Usage Context</TableCell>
+      <TableCell>Links to Libraries</TableCell>
+    </TableRow>
+  </TableHead>
+  <TableBody>
+    <TableRow>
+      <TableCell>Stepper</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/material-ui/react-stepper/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Data Grid</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/x/react-data-grid/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Date Picker</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/x/react-date-pickers/" target="_blank">MUI links to start with</a></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Select</TableCell>
+      <TableCell>Some blurb on how the component is useful in this taskflow</TableCell>
+      <TableCell><a href="https://mui.com/material-ui/react-select/">MUI links to start with</a></TableCell>
+    </TableRow>
+  </TableBody>
+</InfoTable>
+*/}
+
+## Related Task Flows
+
+<Grid container spacing={4}>
+  <Grid item md={6}>
+    <TaskFlowCard name="Contribute Data" />
+  </Grid>
+  <Grid item md={6}>
+    <TaskFlowCard name="Manage Account" />
+  </Grid>
+</Grid>
