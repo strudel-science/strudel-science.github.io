@@ -1,0 +1,57 @@
+---
+id: 'design-system-code-library'
+title: 'STRUDEL Kit'
+subtitle: 'Code templates for scientific task flow UIs'
+---
+import { Link as MuiLink, Button, Stack } from '@mui/material';
+import ArticleIcon from '@mui/icons-material/Article';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Hero } from '/src/components/Hero';
+import { PageContainer } from '/src/components/PageContainer';
+
+<Hero>
+  STRUDEL Kit is a React-based JavaScript library for building scientific UIs based on the STRUDEL Design System and Task Flows. The library provides scaffolding and templates to help scientific teams jumpstart their adaptation and use of common task flows in their products.
+
+  <Stack
+    direction="row"
+    spacing={2}
+  >
+    <MuiLink href="https://strudel.science/strudel-kit/docs/" target='_blank'>
+      <Button variant="contained" startIcon={<ArticleIcon />}>
+        Documentation
+      </Button>
+    </MuiLink>
+    <MuiLink href="https://github.com/strudel-science/strudel-kit" target='_blank'>
+      <Button variant="contained" startIcon={<GitHubIcon />}>
+        GitHub
+      </Button>
+    </MuiLink>
+  </Stack>
+</Hero>
+<PageContainer>
+  STRUDEL Kit is made up of two main products: **strudel-cli**, a command-line tool for quickly generating Task Flow template code, and the **STRUDEL React templates**, code templates for building STRUDEL Task Flows using the React web library. Check out the list of resources below to start learning the skills you need to get started building web applicaitons with STRUDEL Kit.
+
+  **STRUDEL Kit**
+
+  - [Introduction and Getting Started](https://strudel.science/strudel-kit/docs/)
+  - [Tutorials](https://strudel.science/design-system/tutorials/)
+  - [Community Discussions](https://github.com/orgs/strudel-science/discussions)
+  - [Tips and Tricks for Leveraging AI Assistants](https://strudel.science/strudel-kit/docs/usage-with-ai)
+
+  **Web Development**
+
+  - [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
+  - [Learn React: Describing the UI](https://react.dev/learn/describing-the-ui)
+  - [Learn TypeScript](https://www.typescriptlang.org/docs/)
+
+  **Material UI**
+
+  - [Getting Started with Material UI](https://mui.com/material-ui/getting-started/)
+  - [MUI Components](https://mui.com/material-ui/all-components/)
+  - [Theming in MUI](https://mui.com/material-ui/customization/theming/)
+  - [MUI X Data Grid](https://mui.com/x/react-data-grid/)
+
+  **Data Visualization**
+
+  - [Plotly in React](https://plotly.com/javascript/react/)
+</PageContainer> 
