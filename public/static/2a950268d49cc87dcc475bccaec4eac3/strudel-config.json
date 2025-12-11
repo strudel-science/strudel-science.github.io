@@ -1,0 +1,201 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "path": "/",
+      "layoutComponent": "HomeLayout",
+      "markdownId": "home"
+    },
+    {
+      "name": "Planning Framework",
+      "path": "/planning-framework",
+      "redirectTo": "/planning-framework/overview",
+      "children": [
+        {
+          "name": "Overview",
+          "path": "/planning-framework/overview",
+          "markdownId": "planning-framework-overview",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Typology",
+          "path": "/planning-framework/typology",
+          "markdownId": "planning-framework-typology",
+          "layoutComponent": "PageLayout"
+        }
+      ]
+    },
+    {
+      "name": "Design System",
+      "path": "/design-system",
+      "redirectTo": "/design-system/overview",
+      "children": [
+        {
+          "name": "Overview",
+          "path": "/design-system/overview",
+          "markdownId": "design-system-overview",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Task Flows",
+          "path": "/design-system/task-flows",
+          "redirectTo": "/design-system/task-flows/overview",
+          "children": [
+            {
+              "name": "Overview",
+              "path": "/design-system/task-flows/overview",
+              "markdownId": "task-flows-overview",
+              "layoutComponent": "PageLayout"
+            },
+            {
+              "name": "Add Notes",
+              "path": "/design-system/task-flows/add-notes",
+              "markdownId": "task-flows-add-notes",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Compare Data",
+              "path": "/design-system/task-flows/compare-data",
+              "markdownId": "task-flows-compare-data",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Contribute Data",
+              "path": "/design-system/task-flows/contribute-data",
+              "markdownId": "task-flows-contribute-data",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Create Process Graph",
+              "path": "/design-system/task-flows/create-process-graph",
+              "markdownId": "task-flows-create-process-graph",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Explore Data",
+              "path": "/design-system/task-flows/explore-data",
+              "markdownId": "task-flows-explore-data",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Manage Account",
+              "path": "/design-system/task-flows/manage-account",
+              "markdownId": "task-flows-manage-account",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Monitor Activities",
+              "path": "/design-system/task-flows/monitor-activities",
+              "markdownId": "task-flows-monitor-activities",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Review AI Feature Extraction",
+              "path": "/design-system/task-flows/review-ai-feature-extraction",
+              "markdownId": "task-flows-review-ai-feature-extraction",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Run Computation",
+              "path": "/design-system/task-flows/run-computation",
+              "markdownId": "task-flows-run-computation",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Run Interactive Computation",
+              "path": "/design-system/task-flows/run-interactive-computation",
+              "markdownId": "task-flows-run-interactive-computation",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Search Data Repositories",
+              "path": "/design-system/task-flows/search-data-repositories",
+              "markdownId": "task-flows-search-data-repositories",
+              "layoutComponent": "TaskFlowLayout"
+            },
+            {
+              "name": "Track State",
+              "path": "/design-system/task-flows/track-state",
+              "markdownId": "task-flows-track-state",
+              "layoutComponent": "TaskFlowLayout"
+            }
+          ]
+        },
+        {
+          "name": "Code Library",
+          "path": "/design-system/code-library",
+          "markdownId": "design-system-code-library",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Tutorials",
+          "path": "/design-system/tutorials",
+          "markdownId": "design-system-tutorials",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Release Status",
+          "path": "/design-system/release-status",
+          "markdownId": "design-system-release-status",
+          "layoutComponent": "PageLayout"
+        }
+      ]
+    },
+    {
+      "name": "Engage",
+      "path": "/engage",
+      "redirectTo": "/engage/get-involved",
+      "children": [
+        {
+          "name": "Get Involved",
+          "path": "/engage/get-involved",
+          "markdownId": "engage-get-involved",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Events",
+          "path": "/engage/events"
+        },
+        {
+          "name": "News",
+          "path": "/engage/news"
+        },
+        {
+          "name": "Blog",
+          "path": "/engage/blog",
+          "markdownId": "engage-blog",
+          "layoutComponent": "PageLayout"
+        }
+      ]
+    },
+    {
+      "name": "Gallery",
+      "path": "/gallery"
+    },
+    {
+      "name": "About",
+      "path": "/about",
+      "redirectTo": "/about/background",
+      "children": [
+        {
+          "name": "Background",
+          "path": "/about/background",
+          "markdownId": "about-background",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Glossary",
+          "path": "/about/glossary",
+          "markdownId": "about-glossary",
+          "layoutComponent": "PageLayout"
+        },
+        {
+          "name": "Team",
+          "path": "/about/team",
+          "markdownId": "about-team",
+          "layoutComponent": "PageLayout"
+        }
+      ]
+    }
+  ]
+}
