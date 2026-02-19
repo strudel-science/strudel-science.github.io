@@ -1,0 +1,323 @@
+---
+id: 'about-team'
+title: 'Team'
+subtitle: ''
+---
+import { Box, Grid, Stack, Typography, StepLabel, StepContent } from '@mui/material';
+import { PageContainer } from '/src/components/PageContainer';
+import { Hero } from '/src/components/Hero';
+import { Link } from '@mui/material';
+
+
+<PageContainer>
+
+## Partners
+
+	<Grid container columnSpacing={4}>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				maxHeight: '110px',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			[![Lawrence Berkeley National Laboratory](../../content/images/team/logo-lbnl.png)](https://www.lbl.gov/)
+			</Box>
+			
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				maxHeight: '110px',
+				width: 'auto',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			[![Berkeley Institute for Data Science](../../content/images/team/logo-bids.png)](https://bids.berkeley.edu/)
+			</Box>
+			
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+			maxHeight: '110px',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			[![Superbloom](../../content/images/team/logo-superbloom.png)](https://superbloom.design/)
+			</Box>
+			
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				maxHeight: '110px',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			[![The Carpentries](../../content/images/team/logo-the-carpentries.png)](https://carpentries.org/)
+			</Box>
+			
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				maxHeight: '110px',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			[![2I2C](../../content/images/team/logo-2i2c.png)](https://2i2c.org/)
+			</Box>
+			
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				maxHeight: '110px',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			[![Open Source Program Offices](../../content/images/team/logo-ospo.png)](https://ucsc-ospo.github.io/)
+			</Box>
+			
+		</Box>
+		</Grid>
+	</Grid>
+
+
+## People
+
+	<Grid container columnSpacing={8}>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				width: '100%',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			![Lavanya Ramakrishnan](../../content/images/team/lavanya-ramakrishnan.png)
+			</Box>
+			Lavanya Ramakrishnan<br/>
+			<em>Senior Computer Scientist/SciData Division Deputy, PI, LBNL</em>
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+				<Box
+				sx={{
+					width: '100%',
+					'& .gatsby-image-wrapper': {
+					borderRadius: '50%',
+					}
+				}}
+				>
+					![Dan Gunter](../../content/images/team/dan-gunter.png)
+				</Box>
+				Dan Gunter<br/>
+				<em>Usable Data Systems Group Lead, LBNL</em>
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				width: '100%',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			![Sarah Poon](../../content/images/team/sarah-poon.png)
+			</Box>
+			Sarah Poon<br/>
+			<em>User Experience Designer (UXD), LBNL</em>
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				width: '100%',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			![Drew Paine](../../content/images/team/drew-paine.png)
+			</Box>
+			Drew Paine<br/>
+			<em>User Experience Researcher (UXR), LBNL</em>
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px',
+			minWidth: '250px',
+			}}>
+			<Box
+			sx={{
+				width: '100%',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			![Cody O'Donnell](../../content/images/team/cody-o-donnell.png)
+			</Box>
+			Cody O'Donnell<br/>
+			<em>User Experience Engineer (UXE), LBNL</em>
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				width: '100%',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			![Rajshree Deshmukh](../../content/images/team/rajshree-deshmukh.png)
+			</Box>
+			Rajshree Deshmukh<br/>
+			<em>User Experience Designer (UXD), LBNL</em>
+		</Box>
+		</Grid>
+		<Grid item md={4} sm={6}>
+		<Box
+			sx={{
+			textAlign: 'center',
+			border: '2px dotted',
+			borderColor: 'error.main',
+			borderRadius: '16px',
+			padding: 1,
+			marginTop: '32px'
+			}}>
+			<Box
+			sx={{
+				width: '100%',
+				'& .gatsby-image-wrapper': {
+				borderRadius: '50%',
+				}
+			}}
+			>
+			![Hannah Cohoon](../../content/images/team/hannah-cohoon.png)
+			</Box>
+			Hannah Cohoon<br/>
+			<em>User Experience Researcher (UXR), LBNL</em>
+		</Box>
+		</Grid>
+
+	</Grid>
+
+## Alumni
+	- Maarten Lopes<br/>
+			<em>Intern, LBNL</em>
+	- Tiffany Win<br/>
+			<em>Communications Specialist, LBNL</em>
+
+</PageContainer>
+
